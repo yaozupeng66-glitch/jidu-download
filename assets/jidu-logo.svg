@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>迹读</title>
+  <desc>翻开的书页承载记录，一道向前延伸的行迹连接过去与此刻。</desc>
+  <rect width="64" height="64" rx="16" fill="#365d49"/>
+  <g transform="translate(5 4) scale(.84)" stroke="#f3f3e9" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 15c9-3 16-1 23 5 7-6 14-8 23-5v33c-9-3-16-1-23 5-7-6-14-8-23-5V15Z"/>
+    <path d="M32 20v33M17 24c3 0 6 1 8 3M17 32c3 0 6 1 8 3M39 41c0-7 9-8 9-15"/>
+    <circle cx="48" cy="20" r="2.2" fill="#f3f3e9" stroke="none"/>
+  </g>
+</svg>
