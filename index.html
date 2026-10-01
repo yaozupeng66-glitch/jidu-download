@@ -11,6 +11,7 @@
     <meta property="og:image" content="https://yaozupeng66-glitch.github.io/jidu-download/assets/windows-report.png" />
     <link rel="icon" href="./assets/jidu-logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./site.css" />
+    <script src="./site.js" defer></script>
     <title>迹读 · Windows 免费试用版</title>
   </head>
   <body>
@@ -41,6 +42,13 @@
 
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-thread" aria-hidden="true">
+          <svg viewBox="0 0 1440 660" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <path class="hero-thread-guide" d="M-30 501C152 462 125 250 310 310S581 553 739 448 874 190 1040 257 1270 460 1470 150" />
+            <path class="hero-thread-ink" pathLength="100" d="M-30 501C152 462 125 250 310 310S581 553 739 448 874 190 1040 257 1270 460 1470 150" />
+            <circle cx="310" cy="310" r="5" /><circle cx="739" cy="448" r="5" /><circle cx="1040" cy="257" r="5" />
+          </svg>
+        </div>
         <div class="hero-copy content-width">
           <p class="eyebrow">迹读 · Windows 免费试用版</p>
           <h1 id="hero-title">让写下的生活，<br /><span>有迹可读。</span></h1>
@@ -62,7 +70,21 @@
 
       <section class="statement-section" id="product" aria-labelledby="statement-title">
         <div class="content-width statement-layout">
-          <p class="section-index">01 / 从记录到理解</p>
+          <div class="statement-margin">
+            <p class="section-index">01 / 从记录到理解</p>
+            <div class="archive-figure" aria-hidden="true">
+              <svg viewBox="0 0 470 280" focusable="false">
+                <path class="archive-figure-rule" d="M34 226H438" />
+                <rect class="archive-sheet archive-sheet-back" x="119" y="48" width="197" height="149" rx="3" />
+                <rect class="archive-sheet" x="98" y="31" width="197" height="149" rx="3" />
+                <path class="archive-fold" d="M261 31v34h34" />
+                <path class="archive-writing" d="M124 83h93m-93 22h127m-127 22h112m-112 22h70" />
+                <path class="archive-trace" d="M202 155C239 146 246 216 294 218S369 173 414 187" />
+                <circle class="archive-origin" cx="202" cy="155" r="4" /><circle class="archive-end" cx="414" cy="187" r="4" />
+              </svg>
+              <span>写下的原文不会移动，新的线索会出现。</span>
+            </div>
+          </div>
           <div>
             <h2 id="statement-title">你不必重新开始记录。<br />从已经写下的开始。</h2>
             <p>迹读不是新的日记本。继续使用你熟悉的工具，把已有的 TXT、Markdown、CSV、DOCX 或文字版 PDF 导入即可。原文件保持不变。</p>
@@ -75,10 +97,24 @@
           <p class="section-index">02 / 一次清楚的回顾</p>
           <h2 id="journey-title">从一堆文字，<br />到可核对的发现。</h2>
         </div>
-        <ol class="journey-list">
-          <li><span>01</span><div><h3>整理材料</h3><p>识别日期、正文与非原创内容，让你先看清这次分析用了哪些日记。</p></div></li>
-          <li><span>02</span><div><h3>看见反复与变化</h3><p>报告按实际材料生成主题，区分支持线索、反向证据与尚待验证的解释。</p></div></li>
-          <li><span>03</span><div><h3>回到写下的那一天</h3><p>点击证据，返回对应日记核对上下文。建议也会说明适用原因与可尝试的小步骤。</p></div></li>
+        <div class="journey-art" data-step="0" aria-hidden="true">
+          <svg viewBox="0 0 510 245" focusable="false">
+            <path class="journey-art-baseline" d="M35 205H475" />
+            <g class="journey-art-paper">
+              <rect x="47" y="27" width="134" height="149" rx="3" />
+              <path d="M151 27v30h30M69 73h59m-59 19h78m-78 19h66m-66 19h43" />
+            </g>
+            <path class="journey-art-trace" pathLength="100" d="M113 142C160 151 173 202 239 180S313 104 366 144 410 192 463 129" />
+            <g class="journey-art-node journey-art-node--one"><path d="M239 180v25" /><circle cx="239" cy="180" r="5" /></g>
+            <g class="journey-art-node journey-art-node--two"><path d="M366 144v61" /><circle cx="366" cy="144" r="5" /></g>
+            <g class="journey-art-node journey-art-node--three"><path d="M463 129v76" /><circle cx="463" cy="129" r="5" /></g>
+          </svg>
+          <div class="journey-art-legend"><span>原文</span><span>线索</span><span>回看</span></div>
+        </div>
+        <ol class="journey-list" aria-label="点选步骤，查看记录如何成为线索">
+          <li><button class="journey-step" type="button" data-step="0" aria-pressed="true"><span class="journey-number">01</span><span class="journey-step-copy"><strong>整理材料</strong><span>识别日期、正文与非原创内容，让你先看清这次分析用了哪些日记。</span></span><span class="journey-step-arrow" aria-hidden="true">↗</span></button></li>
+          <li><button class="journey-step" type="button" data-step="1" aria-pressed="false"><span class="journey-number">02</span><span class="journey-step-copy"><strong>看见反复与变化</strong><span>报告按实际材料生成主题，区分支持线索、反向证据与尚待验证的解释。</span></span><span class="journey-step-arrow" aria-hidden="true">↗</span></button></li>
+          <li><button class="journey-step" type="button" data-step="2" aria-pressed="false"><span class="journey-number">03</span><span class="journey-step-copy"><strong>回到写下的那一天</strong><span>点击证据，返回对应日记核对上下文。建议也会说明适用原因与可尝试的小步骤。</span></span><span class="journey-step-arrow" aria-hidden="true">↗</span></button></li>
         </ol>
       </section>
 
