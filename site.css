@@ -142,7 +142,7 @@ h1, h2, h3 { text-wrap: balance; }
 .preview-visual figcaption { color: #b2cbb5; text-align: left; }
 
 .privacy-section { position: relative; isolation: isolate; padding-top: 140px; padding-bottom: 140px; }
-.privacy-section::before { position: absolute; z-index: -1; top: 28px; right: max(0px, calc((100vw - var(--content)) / -2)); width: min(360px, 28vw); aspect-ratio: 1; background: url("./assets/jidu-line-mark.svg") center / contain no-repeat; content: ""; opacity: .055; transform: rotate(-8deg); }
+.privacy-section::before { position: absolute; z-index: -1; top: 28px; right: max(0px, calc((100vw - var(--content)) / -2)); width: min(360px, 28vw); aspect-ratio: 1; background: url("./assets/jidu-line-mark.svg?v=032") center / contain no-repeat; content: ""; opacity: .055; transform: rotate(-8deg); }
 .privacy-section h2 { margin-bottom: 62px; }
 .privacy-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 90px; border-top: 1px solid var(--line); }
 .privacy-lead { max-width: 24ch; margin: 27px 0 0; font-size: clamp(19px, 2vw, 25px); font-weight: 570; line-height: 1.7; }
